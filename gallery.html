@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Rawasi Gahlot Trad.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">RG</div>
+        <div class="brand-text">
+          <span class="brand-title lang-en">Rawasi Gahlot Trad.</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="measurement.html">Measurement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="langToggle4" class="btn-ghost">العربية / EN</button>
+        <a class="btn-primary" href="https://wa.me/96891451698" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1 class="section-title">Gallery</h1>
+    <p class="muted">Click any image to enlarge.</p>
+
+    <div class="gallery-grid gallery-click">
+      <img src="assets/thumb1.jpg" alt="Design 1" data-full="assets/full1.jpg">
+      <img src="assets/thumb2.jpg" alt="Design 2" data-full="assets/full2.jpg">
+      <img src="assets/thumb3.jpg" alt="Design 3" data-full="assets/full3.jpg">
+      <img src="assets/thumb4.jpg" alt="Design 4" data-full="assets/full4.jpg">
+      <img src="assets/thumb5.jpg" alt="Design 5" data-full="assets/full5.jpg">
+      <img src="assets/thumb6.jpg" alt="Design 6" data-full="assets/full6.jpg">
+    </div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="lbClose" class="lb-close" aria-label="Close">×</button>
+      <img id="lbImg" src="" alt="Expanded image">
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Rawasi Gahlot Trad.</strong>
+        <div class="muted">Ladies Tailoring • Muscat, Oman</div>
+      </div>
+      <div class="socials">
+        <a href="https://wa.me/96891451698" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:alamtasin18@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year4"></span> Rawasi Gahlot Trad. — All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

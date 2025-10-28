@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Order — Rawasi Gahlot Trad.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">RG</div>
+        <div class="brand-text">
+          <span class="brand-title lang-en">Rawasi Gahlot Trad.</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html" class="active">Order</a></li>
+          <li><a href="measurement.html">Measurement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="langToggle6" class="btn-ghost">العربية / EN</button>
+        <a class="btn-primary" href="https://wa.me/96891451698" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section container">
+    <h1 class="section-title">Place an Order</h1>
+    <p class="muted">Fill the form below. We'll contact you to confirm measurements and delivery.</p>
+
+    <form id="orderForm" class="form-grid">
+      <label>Full Name<input type="text" name="name" required></label>
+      <label>Phone / WhatsApp<input type="tel" name="phone" required value="+968"></label>
+      <label>Email (optional)<input type="email" name="email"></label>
+
+      <label>Service
+        <select name="service" required>
+          <option value="">-- Select --</option>
+          <option>Ladies Tailoring</option>
+          <option>Abaya Stitching</option>
+          <option>Blouse Making</option>
+          <option>Dress Alteration</option>
+          <option>Kurti / Salwar Suit</option>
+          <option>School Uniforms</option>
+          <option>Saree Fall & Pico</option>
+          <option>Skirt & Top Stitching</option>
+        </select>
+      </label>
+
+      <label>Preferred Collection Date<input type="date" name="date"></label>
+      <label>Design Reference (image URL)<input type="url" name="design"></label>
+
+      <label>Notes<textarea name="notes" rows="4"></textarea></label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Submit Order</button>
+        <button type="button" id="orderMailBtn" class="btn-outline">Send via Email</button>
+      </div>
+    </form>
+
+    <p class="muted">Note: This site is static — 'Submit Order' will create a summary you can send via WhatsApp or Email. For full backend ordering, I can integrate server-side processing later.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Rawasi Gahlot Trad.</strong>
+        <div class="muted">Ladies Tailoring • Muscat, Oman</div>
+      </div>
+      <div class="socials">
+        <a href="https://wa.me/96891451698" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:alamtasin18@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span id="year6"></span> Rawasi Gahlot Trad. — All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
