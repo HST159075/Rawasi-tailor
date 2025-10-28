@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & Measurement | Rawasi Gahlot Trad.</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="logo">Rawasi Gahlot Trad.</div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="order.html" class="active">Order</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <section class="order-section">
+        <h2>Order & Measurement Form <span>(طلب قياس وخياطة)</span></h2>
+
+        <div class="order-container">
+
+            <!-- Customer Info -->
+            <div class="order-box">
+                <h3>Customer Information <span>(معلومات الزبون)</span></h3>
+                <label>Name (الاسم):</label>
+                <input type="text" id="name">
+
+                <label>WhatsApp Number (رقم الواتساب):</label>
+                <input type="text" id="phone">
+
+                <label>Dress Type (نوع الخياطة):</label>
+                <select id="dress">
+                    <option value="Abaya">Abaya</option>
+                    <option value="Blouse">Blouse</option>
+                    <option value="Dress">Dress</option>
+                    <option value="Kurti / Salwar">Kurti / Salwar</option>
+                    <option value="School Uniform">School Uniform</option>
+                    <option value="Saree Fall & Pico">Saree Fall & Pico</option>
+                    <option value="Skirt & Top">Skirt & Top</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label>Order Notes (تفاصيل إضافية):</label>
+                <textarea id="notes" rows="3"></textarea>
+            </div>
+
+            <!-- Measurement -->
+            <div class="measurement-box">
+                <h3>Measurements <span>(القياسات)</span></h3>
+                <table>
+                    <tr><td>Shoulder (الكتف)</td><td><input id="shoulder"></td></tr>
+                    <tr><td>Bust/Chest (الصدر)</td><td><input id="bust"></td></tr>
+                    <tr><td>Waist (الخصر)</td><td><input id="waist"></td></tr>
+                    <tr><td>Hip (الورك)</td><td><input id="hip"></td></tr>
+                    <tr><td>Sleeve Length (طول الكم)</td><td><input id="sleeve"></td></tr>
+                    <tr><td>Full Length (الطول الكامل)</td><td><input id="length"></td></tr>
+                    <tr><td>Neck (الرقبة)</td><td><input id="neck"></td></tr>
+                    <tr><td>Armhole (حفرة الكم)</td><td><input id="armhole"></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <button class="btn-order" onclick="sendWhatsApp()">Send Order on WhatsApp</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
