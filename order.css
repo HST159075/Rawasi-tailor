@@ -1,3 +1,139 @@
+
+/* ==== Global Style ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #333;
+}
+
+/* ==== Header ==== */
+.site-header {
+  background: #000;
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ff1e88;
+}
+
+/* ==== Order Section ==== */
+.order-section {
+  padding: 40px 10%;
+}
+
+.order-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #ff1e88;
+}
+
+.order-section span {
+  color: #555;
+  font-size: 16px;
+}
+
+.order-container {
+  display: flex;
+  gap: 25px;
+}
+
+/* ==== Boxes ==== */
+.order-box,
+.measurement-box {
+  width: 50%;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ff1e88;
+  border-radius: 8px;
+}
+
+.order-box h3,
+.measurement-box h3 {
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* ==== Form Elements ==== */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ff1e88;
+  border-radius: 4px;
+}
+
+/* ==== Measurement Table ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.btn-order {
+  margin-top: 25px;
+  padding: 12px 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #ff1e88;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.btn-order:hover {
+  background: black;
+}
+
+/* ==== Responsive ==== */
+@media(max-width: 768px) {
+  .order-container {
+    flex-direction: column;
+  }
+  .order-box, .measurement-box {
+    width: 100%;
+  }
+}
+
 /* ==== Global Style ==== */
 * {
   margin: 0;
